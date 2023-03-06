@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Céline's Webshop </title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="content">
+        <div class="header">
+          <img id="header-image" src="Images/6.jpg" alt="skull" />
+          <div class="header-content">
+            <div class="header-text" id="header-text">
+              <h1 class="ml14">
+                <span class="text-wrapper">
+                  <span class="letters">Webshop van Céline Verschueren</span>
+                  <span class="line"></span>
+                </span>
+              </h1>
+              <h2 class="Subtitel">Dierenfotografie</h2>
+            </div>
+          </div>
+        </div>
+  
+        <div class="Hoofdtitel">Welkom op mijn webshop</div>
+        <p class="Paragraph Paragraph__Begin"> Hallo welkom op mijn fotografie webshop. Deze webshop is fictief en voor een opdracht voor het allerleukste vak Coding Advanced.
+          In de swiper zie je verschillende foto's die ik gemaakt heb en met hart en ziel heb bewerkt. Wil jij ook graag zo'n fotoshoot inplannen of ben je gewoon fan van één van de foto's, aarzel niet om ze aan te kopen of om mij te contacteren.
+          Mijn contactgegevens vind je onderaan de pagina.
+        </p>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="Images/1.jpg"/></div>
+          <div class="swiper-slide"><img src="Images/2.jpg"/></div>
+          <div class="swiper-slide"><img src="Images/3.jpg"/></div>
+          <div class="swiper-slide"><img src="Images/4.jpg"/></div>
+          <div class="swiper-slide"><img src="Images/5.jpg"/></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
+
+  <div class="Hoofdtitel">Neem contact op met mij</div>
+  <p class="Paragraph Paragraph__Contact"> Nog niet helemaal overtuigd of wil graag wat meer informatie in verband met een shoot? 
+    Vul dan zeker het contactformulier in, dan neem ik zo snel mogelijk weer contact met je op. Tot snel!
+  </p>
+
+  <div class="Containerform">
+    <form action="action_page.php">
+  
+      <label for="fname">Voornaam</label>
+      <input type="text" id="fname" name="Voornaam" placeholder="Jouw voornaam">
+  
+      <label for="lname">Achternaam</label>
+      <input type="text" id="lname" name="Achternaam" placeholder="Jouw achternaam">
+
+      <label for="lname">E-mailadres</label>
+      <input type="text" id="lname" name="lastname" placeholder="Jouw e-mailadres">
+      </select>
+  
+      <label for="subject">Onderwerp</label>
+      <textarea id="subject" name="subject" placeholder="Laat hier je opmerking achter" style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+    <div class="column">
+      <div class="column left">
+        <h6>Contact</h6>
+        <p class="text-justify"></p>
+        <A HREF="mailto:celine.verschueren@student.ap.be">celine.verschueren@student.ap.be</A>
+    <h6>Locatie</h6>
+    
+    <div id="loader">Loading...</div>
+    <div id="address"></div>
+      </div>
+      
+      <div class="column right">
+        <h6>Openingsuren</h6>
+          <p>ma: 10u tot 18u</p>
+          <p>di: 10u tot 18u</p>
+          <p>woe: 10u tot 18u</p>
+          <p>do: 10u tot 18u</p>
+          <p>vrij: 10u tot 18u</p>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

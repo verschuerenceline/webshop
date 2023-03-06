@@ -1,0 +1,203 @@
+.content {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  font-family: 'Fonde';
+}
+
+.header {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  font-family:'Fonde';
+  font-weight: 500;
+}
+
+.header img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+
+.Subtitel {
+  position: relative;
+  display: inline-block;
+  text-transform: none;
+  padding-top: 0.1em;
+  padding-left: 1.5em;
+  padding-bottom: 0.15em;
+  font-weight: 100;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.Hoofdtitel {
+  position: relative;
+  font-family:'Fonde';
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 5%;
+  padding-bottom: 0;
+  display: inline-block;
+}
+
+.Paragraph__Begin {
+  font-family:'Raleway';
+  position: relative;
+  display: inline-block;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+:root {
+  --swiper-navigation-color: white;
+  --swiper-pagination-color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 800px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+};
+
+.Titel2--Contact {
+  font-family:'Fonde';
+  font-size: 2em;
+  font-weight: 500;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 0.5em;
+}
+
+.Paragraph__Contact {
+  font-family:'Raleway';
+  position: relative;
+  display: inline-block;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+input[type=text], select, textarea {
+  font-family:'Raleway';
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid chocolate; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical 
+  
+}
+
+.Containerform {
+  font-family:'Raleway';
+  border-radius: 5px;
+  padding: 10%;
+  padding-top: 2%;
+  padding-bottom: 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+input[type=submit] {
+  font-family:'Raleway';
+  background-color: chocolate;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 5em;
+}
+
+.column {
+  float: left;
+  height: 100%;
+  width: 100%;
+  color: #f4f4f4;;
+  background-color:#643e14;
+  font-family:'Raleway'; 
+  padding-top: 100px;  
+  padding-bottom: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+.left {
+  margin-left: 25%;
+  width: 25%;
+  padding: .5rem;
+}
+
+.right {
+  width: 25%;
+  padding: .5rem;
+  margin-right: 25%;
+}
+
+h6{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a[href^="mailto:"] { 
+color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-content {
+    text-align: center;
+  }
+  .Subtitel {
+    text-align: center;
+    padding-left: 0;
+  }
+  .left{
+    margin-left: 10%;
+    width: 54%;
+  }
+  .right{
+    margin-right: 10%;
+    width: 26%;
+  }
+  .column {
+    letter-spacing: 1px;
+  }
+}
