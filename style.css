@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   background-color: black;
-  font-family:'Fonde';
+  font-family: 'Fonde';
   font-weight: 500;
 }
 
@@ -36,7 +36,6 @@
   font-size: 50px;
 }
 
-
 .Subtitel {
   position: relative;
   display: inline-block;
@@ -51,23 +50,24 @@
 
 .Hoofdtitel {
   position: relative;
-  font-family:'Fonde';
+  font-family: 'Fonde';
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 2px;
-  padding: 5%;
-  padding-bottom: 0;
+  padding-top: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
   display: inline-block;
 }
 
 .Paragraph__Begin {
-  font-family:'Raleway';
+  font-family: 'Raleway';
   position: relative;
   display: inline-block;
   padding-top: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 100px;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -92,52 +92,56 @@
 }
 
 .Titel2--Contact {
-  font-family:'Fonde';
+  font-family: 'Fonde';
   font-size: 2em;
   font-weight: 500;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 25%;
+  padding-right: 25%;
   padding-bottom: 0.5em;
 }
 
 .Paragraph__Contact {
-  font-family:'Raleway';
+  font-family: 'Raleway';
   position: relative;
   display: inline-block;
   padding-top: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 25%;
+  padding-right: 25%;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 20px;
+  max-width: fit-content;
 }
 
-input[type=text], select, textarea {
-  font-family:'Raleway';
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid chocolate; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
+input[type='text'],
+select,
+textarea {
+  font-family: 'Raleway';
+  width: 100%;
+  padding: 12px;
+  border: 1px solid chocolate;
+  border-radius: 4px;
+  box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px; 
-  resize: vertical 
-  
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 .Containerform {
-  font-family:'Raleway';
+  font-family: 'Raleway';
   border-radius: 5px;
-  padding: 10%;
-  padding-top: 2%;
-  padding-bottom: 0;
+  padding: 25%;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-weight: 500;
   letter-spacing: 2px;
+  max-width: fit-content;
+  align-items: center;
 }
 
-input[type=submit] {
-  font-family:'Raleway';
+input[type='submit'] {
+  font-family: 'Raleway';
   background-color: chocolate;
   color: white;
   padding: 12px 20px;
@@ -148,56 +152,83 @@ input[type=submit] {
 }
 
 .column {
-  float: left;
-  height: 100%;
   width: 100%;
-  color: #f4f4f4;;
-  background-color:#643e14;
-  font-family:'Raleway'; 
-  padding-top: 100px;  
-  padding-bottom: 1.5rem;
+  color: #f4f4f4;
+  background-color: #643e14;
+  font-family: 'Raleway';
+  padding-top: 100px;
+  padding-bottom: 100px;
   letter-spacing: 2px;
   line-height: 35px;
+  display: flex;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
-.left {
-  margin-left: 25%;
-  width: 25%;
-  padding: .5rem;
+.column__left {
+  flex: 1;
 }
 
-.right {
-  width: 25%;
-  padding: .5rem;
-  margin-right: 25%;
+.column__right {
+  flex: 0.5;
 }
 
-h6{
+h6 {
   font-size: 16px;
   font-weight: bold;
 }
 
-a[href^="mailto:"] { 
-color: white;
+a[href^='mailto:'] {
+  color: white;
 }
 
 @media only screen and (max-width: 800px) {
   .header-content {
     text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .Subtitel {
     text-align: center;
-    padding-left: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
   }
-  .left{
-    margin-left: 10%;
-    width: 54%;
+
+  .Hoofdtitel {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
   }
-  .right{
-    margin-right: 10%;
-    width: 26%;
+
+  .Paragraph__Begin {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 100px;
   }
+
+  .Paragraph__Contact {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+  }
+
   .column {
     letter-spacing: 1px;
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .column__right {
+    padding-top: 3rem;
+  }
+
+  .Containerform {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
